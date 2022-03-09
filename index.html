@@ -158,27 +158,21 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-001 80端口被系统占用如何关闭" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-        
-        <a href="/2022/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2022-03-07T03:34:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-07</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2>
+        <h1 id="80端口被系统占用"><a href="#80端口被系统占用" class="headerlink" title="80端口被系统占用"></a>80端口被系统占用</h1><p>​    最近在学习sql注入，打算自己搭个靶场练练手，结果使用phpstudy搭建的时候发现本地80端口被占用，尝试使用phpstudy关闭，结果罪魁祸首竟是system占用了80端口，权限不够phpstudy也关不了，而是用本地搭建服务器环境时，一般都会使用80端口，现在80端口被system占用，导致Apache启动不了，尝试修改Apache的默认端口搭建，结果迟迟不成功，所以我决定找出是谁占用了80端口</p>
+<p>​    通过百度得知系统占用的端口都是微软官方的软件(果真是肥水不流外人田), 一般可能的有</p>
+<ol>
+<li><code>SQL Server Reporting Services (MSSQLSERVER)</code>，它是 SQL Server 的日志系统。</li>
+<li><code>IIS </code>服务</li>
+</ol>
+<p>​    看到这里我心中已经有了答案，我的电脑装有<code>SQL Server Reporting Services (MSSQLSERVER)</code>,既然找到了目标，我们关闭它就可以了，在导航的搜索栏输入<code>services.msc</code>,打开服务系统，找到<code>SQL Server Reporting Services (MSSQLSERVER)</code>,右击属性—-启动类型改为手动或关闭，服务状态里点击停止键就可以了。</p>
+<p><img src="/../picture/001/sql.jpg"></p>
+<p><img src="/../picture/001/stop.jpg"></p>
+
       
 
       
@@ -190,7 +184,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2022/03/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+          <a class="article-more-a" href="/2022/03/09/001%2080%E7%AB%AF%E5%8F%A3%E8%A2%AB%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%AD/">展开全文 >></a>
         </p>
       
 
