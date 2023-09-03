@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章1.  第二章2.">
+  <meta name="description" content="Learn Opencv第一章 opencv初识1.1 图像的加载、显示和保存1.1.1 图像的加载 : imread()函数函数原型 123Mat cv::imread(const String &amp; 	filename,			   int 	flags &#x3D; IMREAD_COLOR )">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://example.com/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/08/06/2023-8-6%20OpenCV/OpenCV/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章1.  第二章2.">
+<meta property="og:description" content="Learn Opencv第一章 opencv初识1.1 图像的加载、显示和保存1.1.1 图像的加载 : imread()函数函数原型 123Mat cv::imread(const String &amp; 	filename,			   int 	flags &#x3D; IMREAD_COLOR )">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-06-06T14:40:07.000Z">
-<meta property="article:modified_time" content="2023-06-06T14:42:52.160Z">
+<meta property="article:published_time" content="2023-08-06T10:03:37.696Z">
+<meta property="article:modified_time" content="2023-09-03T14:49:28.394Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/images/head_img.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/images/head_img.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -154,28 +154,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2023-8-6 OpenCV/OpenCV" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
-    </h1>
-  
-
-        
-        <a href="/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2023-06-06T14:40:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-06</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>1. </p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>2. </p>
+        <hr>
+<h2 id="Learn-Opencv"><a href="#Learn-Opencv" class="headerlink" title="Learn Opencv"></a>Learn Opencv</h2><h3 id="第一章-opencv初识"><a href="#第一章-opencv初识" class="headerlink" title="第一章 opencv初识"></a>第一章 opencv初识</h3><h4 id="1-1-图像的加载、显示和保存"><a href="#1-1-图像的加载、显示和保存" class="headerlink" title="1.1 图像的加载、显示和保存"></a>1.1 图像的加载、显示和保存</h4><h5 id="1-1-1-图像的加载-imread-函数"><a href="#1-1-1-图像的加载-imread-函数" class="headerlink" title="1.1.1 图像的加载 : imread()函数"></a>1.1.1 图像的加载 : imread()函数</h5><p><strong>函数原型</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Mat <span class="title">cv::imread</span><span class="params">(<span class="type">const</span> String &amp; 	filename,</span></span></span><br><span class="line"><span class="params"><span class="function">			   <span class="type">int</span> 	flags = IMREAD_COLOR </span></span></span><br><span class="line"><span class="params"><span class="function">)</span>	</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li><p><code>filename</code> : 需要载入图像的路径</p>
+</li>
+<li><p><code>flags</code>：指定加载图像的颜色类型</p>
+<ul>
+<li><code>IMREAD_UNCHANGED</code>：以原始格式加载图像，不进行任何颜色空间或通道转换。无论图像有多少通道，都将被加载并保留</li>
+<li><code>IMREAD_GRAYSCALE</code>：以灰度格式加载图像</li>
+<li><code>IMREAD_COLOR </code>：以3通道BGR格式加载图像</li>
+<li><code>IMREAD_ANYDEPTH</code>：如果载入图像的深度为16bit&#x2F;32bit，就返回对应深度图的图像。否则转换为8bit深度图像</li>
+<li><code>IMREAD_ANYCOLOR </code>：以任何可能的形式加载图像，尽可能保留原始图像的颜色通道格式</li>
+</ul>
+<blockquote>
+<p>注意：</p>
+<ol>
+<li>如果输入有冲突的标志，将采用较小的数字值。比如<code>IMREAD_COLOR | IMREAD_ANYCOLOR</code>将载入三通道图</li>
+<li>如果想要载入最真实无损的源图像，可以选择<code>IMREAD_ANYDEPTH | IMREAD_ANYCOLOR</code></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h5 id="1-1-2-图像的显示：imshow-函数"><a href="#1-1-2-图像的显示：imshow-函数" class="headerlink" title="1.1.2  图像的显示：imshow()函数"></a>1.1.2  图像的显示：imshow()函数</h5><p><strong>函数原型</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">cv::imshow</span><span class="params">(<span class="type">const</span> String &amp; 	winname,</span></span></span><br><span class="line"><span class="params"><span class="function">				InputArray 	mat </span></span></span><br><span class="line"><span class="params"><span class="function">)</span>	</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>winname</code> : 图像显示窗口的名称</li>
+<li><code>mat</code> : 需要显示的图像</li>
+</ul>
+<h5 id="1-1-3-创建窗口-nameWindow-函数"><a href="#1-1-3-创建窗口-nameWindow-函数" class="headerlink" title="1.1.3 创建窗口 : nameWindow()函数"></a>1.1.3 创建窗口 : nameWindow()函数</h5><p><strong>函数原型</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">void cv::namedWindow(const String &amp; 	winname,</span><br><span class="line">					 int 	flags = WINDOW_AUTOSIZE </span><br><span class="line">)	</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>winname</code> : 窗口的名称</li>
+<li><code>flags</code> ： 窗口的标识<ul>
+<li><code>WINDOW_NORMAL </code> : 用户可以调整窗口大小（无限制）&#x2F;也可以用于将全屏窗口切换到正常大小</li>
+<li><code>WINDOW_AUTOSIZE</code>：窗口自适应为图像的大小，并且用户不可以手动改变窗口大小</li>
+<li><code>WINDOW_OPENGL </code> ： 支持opengl的窗口</li>
+<li><code>WINDOW_FULLSCREEN </code> : 窗口全屏</li>
+<li><code>WINDOW_FREERATIO </code> : 图像尽可能多的显示（无比例限制）</li>
+<li><code>WINDOW_KEEPRATIO </code> ：维持图像的比例</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-1-4-保存图像-imwrite-函数"><a href="#1-1-4-保存图像-imwrite-函数" class="headerlink" title="1.1.4 保存图像 : imwrite()函数"></a>1.1.4 保存图像 : imwrite()函数</h5><p><strong>函数原型</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cv::imwrite</span><span class="params">(<span class="type">const</span> String &amp; 	filename,</span></span></span><br><span class="line"><span class="params"><span class="function">				 InputArray 	img,</span></span></span><br><span class="line"><span class="params"><span class="function">				 <span class="type">const</span> std::vector&lt;<span class="type">int</span>&gt;&amp;  params = std::vector&lt;<span class="type">int</span>&gt;() </span></span></span><br><span class="line"><span class="params"><span class="function">)</span>	</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>filename</code> : 保存图像的文件名</p>
+</li>
+<li><p><code>img</code> : 要保持的单个图像或多个图像(Mat格式)</p>
+</li>
+<li><p><code>params</code> : 特定格式保存的参数编码，默认值为<code>std::vector&lt;int&gt;()</code>。</p>
+<ul>
+<li><p><code>IMWRITE_JPEG_QUALITY </code> : 对于JPEG格式的图像，此参数表示从0到100的图像质量，默认值是95</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cv::Mat image = cv::<span class="built_in">imread</span>(<span class="string">&quot;input.jpg&quot;</span>);</span><br><span class="line"><span class="keyword">if</span> (image.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">	std::cout &lt;&lt; <span class="string">&quot;Failed to read image.&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; params;</span><br><span class="line">params.<span class="built_in">push_back</span>(cv::IMWRITE_JPEG_QUALITY); <span class="comment">// 设置参数为JPEG质量</span></span><br><span class="line">params.<span class="built_in">push_back</span>(<span class="number">90</span>); <span class="comment">// 设置JPEG质量为90（范围0-100）</span></span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> success = cv::<span class="built_in">imwrite</span>(<span class="string">&quot;output.jpg&quot;</span>, image, params);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>IMWRITE_PNG_COMPRESSION </code> : 对于PNG格式的图像，此参数表示压缩级别(0~9)，值越高压缩程度越大，耗费时间更长</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cv::Mat image = cv::<span class="built_in">imread</span>(<span class="string">&quot;input.png&quot;</span>);</span><br><span class="line"><span class="keyword">if</span> (image.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Failed to read image.&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; params;</span><br><span class="line">params.<span class="built_in">push_back</span>(cv::IMWRITE_PNG_COMPRESSION); <span class="comment">// 设置参数为PNG压缩级别</span></span><br><span class="line">params.<span class="built_in">push_back</span>(<span class="number">9</span>); <span class="comment">// 设置PNG压缩级别为最高（范围0-9）</span></span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> success = cv::<span class="built_in">imwrite</span>(<span class="string">&quot;output.png&quot;</span>, image, params);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-滑动条的创建和使用"><a href="#1-2-滑动条的创建和使用" class="headerlink" title="1.2 滑动条的创建和使用"></a>1.2 滑动条的创建和使用</h4><h5 id="1-2-1-创建滑动条-createTrackbar-函数"><a href="#1-2-1-创建滑动条-createTrackbar-函数" class="headerlink" title="1.2.1 创建滑动条 : createTrackbar()函数"></a>1.2.1 创建滑动条 : createTrackbar()函数</h5><p><strong>函数原型</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">cv::createTrackbar</span><span class="params">(<span class="type">const</span> String&amp; 	trackbarname,</span></span></span><br><span class="line"><span class="params"><span class="function">                       <span class="type">const</span> String&amp;	winname,</span></span></span><br><span class="line"><span class="params"><span class="function">                       <span class="type">int</span>*				value,</span></span></span><br><span class="line"><span class="params"><span class="function">                       <span class="type">int</span>				count,</span></span></span><br><span class="line"><span class="params"><span class="function">                       TrackbarCallback onChange = <span class="number">0</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">                       <span class="type">void</span>*			userdata = <span class="number">0</span></span></span></span><br><span class="line"><span class="params"><span class="function">)</span></span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>trackbarname</code> : 滑动条的名字</li>
+<li><code>winname</code> : 滑动条所在窗口的名字，该窗口由<code>cv::namedWindow()</code>创建</li>
+</ul>
 
       
 
@@ -255,7 +311,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/06/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/08/06/2023-8-6%20OpenCV/OpenCV/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,9 +325,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2023/09/03/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2023/06/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+  
+    <a href="/2023/07/18/2023-7-18%20QT/qt/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
