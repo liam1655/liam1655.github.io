@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo theme yilia configuration | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 配置头像 添加图像资源文件夹。在路径themes&#x2F;yilia&#x2F;source&#x2F;下新建一个assets&#x2F;images文件夹，用于存放图像资源。  配置文件中引用图像。打开themes&#x2F;yilia&#x2F;下的_config.yml文件，在avatar后添加图像路径。 12#你的头像urlavatar: &#x2F;assets&#x2F;images&#x2F;head_img.png">
+  <meta name="description" content="1. 配置头像  添加图像资源文件夹。在路径themes&#x2F;yilia&#x2F;source&#x2F;下新建一个assets&#x2F;images文件夹，用于存放图像资源。 配置文件中引用图像。打开themes&#x2F;yilia&#x2F;下的_config.yml文件，在avatar后添加图像路径。 12#你的头像urlavatar: &#x2F;assets&#x2F;images&#x2F;head_img.png">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo theme yilia configuration">
 <meta property="og:url" content="http://example.com/2023/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. 配置头像 添加图像资源文件夹。在路径themes&#x2F;yilia&#x2F;source&#x2F;下新建一个assets&#x2F;images文件夹，用于存放图像资源。  配置文件中引用图像。打开themes&#x2F;yilia&#x2F;下的_config.yml文件，在avatar后添加图像路径。 12#你的头像urlavatar: &#x2F;assets&#x2F;images&#x2F;head_img.png">
+<meta property="og:description" content="1. 配置头像  添加图像资源文件夹。在路径themes&#x2F;yilia&#x2F;source&#x2F;下新建一个assets&#x2F;images文件夹，用于存放图像资源。 配置文件中引用图像。打开themes&#x2F;yilia&#x2F;下的_config.yml文件，在avatar后添加图像路径。 12#你的头像urlavatar: &#x2F;assets&#x2F;images&#x2F;head_img.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2023/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/001.png">
 <meta property="article:published_time" content="2023-09-03T15:47:44.000Z">
@@ -183,40 +183,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-配置头像"><a href="#1-配置头像" class="headerlink" title="1. 配置头像"></a>1. 配置头像</h4><ul>
-<li><p><strong>添加图像资源文件夹</strong>。在路径<code>themes/yilia/source/</code>下新建一个<code>assets/images</code>文件夹，用于存放图像资源。</p>
-</li>
+        <h4 id="配置头像">1. 配置头像</h4>
+<ul>
+<li><p><strong>添加图像资源文件夹</strong>。在路径<code>themes/yilia/source/</code>下新建一个<code>assets/images</code>文件夹，用于存放图像资源。</p></li>
 <li><p><strong>配置文件中引用图像</strong>。打开<code>themes/yilia/</code>下的<code>_config.yml</code>文件，在<code>avatar</code>后添加图像路径。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#你的头像url</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/assets/images/head_img.png</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <span id="more"></span>
-
-<h4 id="2-文章部分显示"><a href="#2-文章部分显示" class="headerlink" title="2. 文章部分显示"></a>2. 文章部分显示</h4><ul>
-<li><p>问题: 点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数</p>
-</li>
-<li><p>解决办法: 在你 MD 格式文章正文插入 <code>&lt;!-- more --&gt;</code>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到。</p>
-</li>
-<li><p>同时注释掉 <code>themes/yilia/_config.yml</code>中的<code>excerpt_link</code>，避免展示重复</p>
+<h4 id="文章部分显示">2. 文章部分显示</h4>
+<ul>
+<li><p>问题:
+点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数</p></li>
+<li><p>解决办法: 在你 MD 格式文章正文插入
+<code>&lt;!-- more --&gt;</code>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到。</p></li>
+<li><p>同时注释掉
+<code>themes/yilia/_config.yml</code>中的<code>excerpt_link</code>，避免展示重复</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># excerpt_link: more</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="3-所有文章提示缺失模块"><a href="#3-所有文章提示缺失模块" class="headerlink" title="3. 所有文章提示缺失模块"></a>3. 所有文章提示缺失模块</h4><p><code>yilia</code> 在首次使用时，点击<strong>所有文章</strong>时，会出现模块找不到的错误，可按照提示操作即可<br>注意一下，<code>_config.yml</code> 路径是指根目录下的，而非 <code>yilia</code> 主题下的 <code>config</code>文件。</p>
- <img src="/2023/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/001.png" class>
-
+<h4 id="所有文章提示缺失模块">3. 所有文章提示缺失模块</h4>
+<p><code>yilia</code>
+在首次使用时，点击<strong>所有文章</strong>时，会出现模块找不到的错误，可按照提示操作即可
+注意一下，<code>_config.yml</code> 路径是指根目录下的，而非
+<code>yilia</code> 主题下的 <code>config</code>文件。</p>
+<p><img src="/2023/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/09/03/blog/2023-9-3%20hexo%20theme%20yilia/hexo%20theme%20yilia%20configuration/001.png" class></p>
 <p>安装jsoncontent包，博客根目录下执行<code>npm i hexo-generator-json-content --save</code>命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm i hexo-generator-json-content --save</span></span><br><span class="line"></span><br><span class="line">added 5 packages, changed 1 package, and audited 250 packages in 18s</span><br><span class="line"></span><br><span class="line">27 packages are looking for funding</span><br><span class="line">  run `npm fund` for details</span><br><span class="line"></span><br><span class="line">2 moderate severity vulnerabilities</span><br><span class="line"></span><br><span class="line">To address all issues, run:</span><br><span class="line">  npm audit fix</span><br><span class="line"></span><br><span class="line">Run `npm audit` for details.</span><br><span class="line">npm notice</span><br><span class="line">npm notice New major version of npm available! 8.19.3 -&gt; 10.0.0</span><br><span class="line">npm notice Changelog: &lt;https://github.com/npm/cli/releases/tag/v10.0.0&gt;</span><br><span class="line">npm notice Run `npm install -g npm@10.0.0` to update!</span><br><span class="line">npm notice</span><br></pre></td></tr></table></figure>
-
 <p>在<code>_config.yml</code>中增加如下内容：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jsonContent:</span></span><br><span class="line"> <span class="attr">meta:</span> <span class="literal">false</span></span><br><span class="line"> <span class="attr">pages:</span> <span class="literal">false</span></span><br><span class="line"> <span class="attr">posts:</span></span><br><span class="line">  <span class="attr">title:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">date:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">path:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">raw:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">slug:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">updated:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">link:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">excerpt:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="4-增加归档菜单"><a href="#4-增加归档菜单" class="headerlink" title="4. 增加归档菜单"></a>4. 增加归档菜单</h4><ul>
+<h4 id="增加归档菜单">4. 增加归档菜单</h4>
+<ul>
 <li><p>修改<code>themes/yilia/_config.yml</code>文件</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">主页:</span> <span class="string">/</span></span><br><span class="line">  <span class="string">随笔:</span> <span class="string">/tags/随笔/</span></span><br><span class="line">  <span class="string">归档:</span> <span class="string">/archives/index.html</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="5-添加分类和标签"><a href="#5-添加分类和标签" class="headerlink" title="5. 添加分类和标签"></a>5. 添加分类和标签</h4><ul>
+<h4 id="添加分类和标签">5. 添加分类和标签</h4>
+<ul>
 <li><p>编辑md文章时添加<code>tags</code>和<code>categories</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: title #文章标题</span><br><span class="line">date: 2016-06-01 23:47:44 #文章生成时间</span><br><span class="line">categories: &quot;Hexo教程&quot; #文章分类目录 可省略</span><br><span class="line">tags: #文章标签 可以省略</span><br><span class="line">     - 标签1</span><br><span class="line">     - 标签2</span><br><span class="line"> description: #你对本页的描述 可以省略</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a>二、其他</h3><h4 id="1-文章发布"><a href="#1-文章发布" class="headerlink" title="1. 文章发布"></a>1. 文章发布</h4><ul>
+<h3 id="二其他">二、其他</h3>
+<h4 id="文章发布">1. 文章发布</h4>
+<ul>
 <li>在<code>\source\_posts\</code>目录下编辑markdown文章</li>
 <li>编辑完成打开命令行，输入<code>hexo clean</code>清理本机中已生成的文章(缓存)，非必需步骤</li>
 <li>输入<code>hexo g</code>或<code>hexo generate</code>生成静态文件</li>
@@ -471,6 +477,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">calculus</a>
               </li>
             
             <div class="clearfix"></div>
